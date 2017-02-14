@@ -1,0 +1,55 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light"/>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--<item name="android:textColorPrimary">@android:color/white</item>-->
+
+        <item name="android:alertDialogStyle">@style/AlertDialog.AppCompat.Light.MyDialog</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="21">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--Toolbar Theme /Apply Arrow-->
+        <item name="colorControlNormal">@color/toolbarColor</item>
+        <item name="actionBarTheme">@style/AppTheme.ActionBarTheme</item>
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:navigationBarColor" tools:targetApi="21">@color/toolbarColor</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="21">true</item>
+    </style>
+
+    <style name="AppTheme.ActionBarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <!-- White arrow -->
+        <item name="android:textColorPrimary">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="android:background">@color/toolbarColor</item>
+        <item name="android:actionMenuTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/drawerArrowColor</item>
+    </style>
+
+    <style name="DrawerItemStyle">
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:drawableLeft">@drawable/drawable_item_indicator</item>
+        <item name="android:background">@drawable/drawable_item_background</item>
+        <item name="android:textColor">@color/drawer_item_text_color</item>
+        <item name="android:drawablePadding">32dp</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="AlertDialog.AppCompat.Light.MyDialog" parent="AlertDialog.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/blue</item>
+        <item name="android:textColor">@color/blue</item>
+        <!--<item name="color"-->
+    </style>
+
+</resources>

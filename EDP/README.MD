@@ -1,0 +1,2 @@
+说明：本项目使用中国移动OneNET提供的服务器，实现android app
+与Arduino Ameba板数据交互

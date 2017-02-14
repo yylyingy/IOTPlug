@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="250dp"
+              android:layout_height="match_parent"
+              android:layout_gravity="start"
+              android:background="@color/colorWhite">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/devsFragmentBtn"
+            android:text="devs"
+            android:checked="true"
+            style="@style/DrawerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:id="@+id/testFragmentBtn"
+            android:text="test"
+            style="@style/DrawerItemStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RadioGroup>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/addDevice"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/blue"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="false">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:materialIcon="plus"
+                        app:materialIconColor="@color/colorBlue"
+                        app:materialIconSize="24dp"
+                        android:scaleType="center"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Add Dev"
+                        android:textColor="@color/drawer_text"
+                        />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                app:mrl_rippleAlpha="0.2"
+                app:mrl_rippleColor="@color/blue"
+                app:mrl_rippleHover="true"
+                app:mrl_rippleOverlay="false">
+
+                <LinearLayout
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+                    <net.steamcrafted.materialiconlib.MaterialIconView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:materialIcon="exit_to_app"
+                        app:materialIconColor="@color/colorBlue"
+                        app:materialIconSize="24dp"
+                        android:scaleType="center"
+                        android:id="@+id/custom_icon"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/quit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="Quit"
+                        android:textColor="@color/drawer_text"/>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
