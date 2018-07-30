@@ -1,1 +1,2 @@
-include ':Android-EDP-sdk', ':EDP', ':materialList'
+include ':EDP', ':materialList'
+include ':Android-EDP-sdk'
